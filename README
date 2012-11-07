@@ -1,0 +1,26 @@
+This is a PEM certificate tester.  The core of this code was pulled out of the
+1.5 series of HAProxy.
+
+
+==Dependencies==
+libssl is required
+
+
+==Compilation==
+Run the following commands:
+    make clean
+    make
+
+If all goes well, there will be an executable named "ssl_test".
+
+
+==Running the test==
+
+Once the compilation is successful, PEM files can be tested by running:
+    ./ssl_test [path-to-PEM-file]
+
+Tested on Ubuntu 12.04.1 LTS and Mac OSX Lion.
+
+
+Author: Jay Taylor
+Date: 2012-11-06
